@@ -65,4 +65,10 @@ def get_class_average(class_list):
     results.append(student_avg)
   return average(results)
   
-  
+  # check grade of class overall
+students = [alice, lloyd, tyler]
+print get_class_average(students)
+
+# determine the letter grade for the class' average and print it
+print get_letter_grade(get_glass_average(students))
+
