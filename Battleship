@@ -1,1 +1,2 @@
-
+# Setup game board
+board = [] 
