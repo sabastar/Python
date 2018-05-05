@@ -38,12 +38,14 @@ guess_col = int(raw_input("Guess Col: "))
 if guess_row == ship_row and guess_col == ship_col:
   print "Congratulations! You sank my battleship!"
 else:
-# Check if in range of board (rows and columns)
   if guess_row not in range(5) or guess_col not in range(5):
     print "Oops, that's not even in the ocean."
+    
+  elif guess_row == guess_row and guess_col == guess_col:
+    print "You guessed that one already."
   else: 
     # Set list element at guess_row, guess_col to "X"
-    print "You missed my battleship!"
-    board[int(guess_row)][int(guess_col)] = "X"
-    # See the X on the board
-    print_board(board)
+     print "You missed my battleship!"
+     board[int(guess_row)][int(guess_col)] = "X"
+     # See the X on the board
+     print_board(board)
