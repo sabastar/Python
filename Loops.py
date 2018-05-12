@@ -39,3 +39,44 @@ while True:
   if count >= 10:
     break # exit the loop
 
+# While else > executes false condition
+# it will execute if loop never entered or if loop exits normally, not after a break
+
+import random
+
+print "Lucky Numbers! 3 numbers will be generated."
+print "If one of them is a '5', you lose!"
+
+count = 0
+while count < 3:
+  num = random.randint(1, 6)
+  print num
+  if num == 5:
+    print "Sorry, you lose!"
+    break
+  count += 1
+else:
+  print "You win!"
+  
+  # Allow user to guess what number it is 3 times
+  
+  from random import randint
+
+# Generates a number from 1 through 10 inclusive
+random_number = randint(1, 10)
+
+guesses_left = 3
+# Start your game!
+
+while guesses_left > 0:
+  # raw_input turns input into a string, wrap with int()
+  guess = int(raw_input("Your guess: "))
+  if guess == random_number:
+    print "You win!"
+    break
+  guesses_left -= 1
+else:
+  
+  print "You lose."
+  
+  
