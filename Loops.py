@@ -79,4 +79,20 @@ else:
   
   print "You lose."
   
+# For loops > Make a for loop that counts from range 0 to 19
+print "Counting..."
+
+for i in range(20):
+  print i
   
+# Create a for loop that prompts user for a hobby 3 times and save result to hobby var
+hobbies = []
+
+# Add your code below!
+for i in range(3):
+  # save result of each prompt into hobby
+  hobby = raw_input("Hobby: ")
+  # append each one to hobbies
+  hobbies.append(hobby)
+  # print hobbies after the for loop
+print hobbies
