@@ -96,3 +96,20 @@ for i in range(3):
   hobbies.append(hobby)
   # print hobbies after the for loop
 print hobbies
+
+
+# Can print each individual character in a string using for loop 
+# Add a second loop so that each character in word is printed one at a time
+
+thing = "spam!"
+
+for c in thing:
+  print c
+
+word = "eggs!"
+
+# Your code here!
+for x in word:
+  print x
+  
+  
