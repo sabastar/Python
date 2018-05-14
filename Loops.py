@@ -140,3 +140,11 @@ for num in numbers:
 # Wrrite a second for loop that goes through numbers list and prints each element squared, each on its own line
 for num in numbers:
   print num**2
+
+ # Loop over a dictionary using the key to get the value
+d = {'a': 'apple', 'b': 'berry', 'c': 'cherry'}
+
+for key in d:
+  # Print the key with space and value associated
+  print key + " " + d[key]
+  
