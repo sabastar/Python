@@ -129,3 +129,14 @@ for char in phrase:
 #Don't delete this print statement!
 print 
 
+# loops with Lists:
+numbers  = [7, 9, 12, 54, 99]
+# num is next value in the list
+print "This list contains: "
+
+for num in numbers:
+  print num
+
+# Wrrite a second for loop that goes through numbers list and prints each element squared, each on its own line
+for num in numbers:
+  print num**2
