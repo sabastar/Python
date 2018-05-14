@@ -113,3 +113,19 @@ for x in word:
   print x
   
   
+  
+# Filter out the letter A in the string using a for loop
+phrase = "A bird in the hand..."
+
+# Add your for loop
+for char in phrase:
+  if char == "A" or char == "a":
+    print "X", 
+# , prints on the same line
+  else:
+    print char,
+
+
+#Don't delete this print statement!
+print 
+
