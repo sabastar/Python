@@ -157,3 +157,19 @@ choices = ['pizza', 'pasta', 'salad', 'nachos']
 print 'Your choices are:'
 for index, item in enumerate(choices):
   print index+1, item
+
+# ZIP
+# iterate over 2 lists
+# Zip creates pairs of elements when passed 2 lists and stops at end of shorter list
+# can handle 3+ lists too
+list_a = [3, 9, 17, 15, 19]
+list_b = [2, 4, 8, 10, 30, 40, 50, 60, 70, 80, 90]
+
+# a is an element from list_a
+for a, b in zip(list_a, list_b):
+  # Compare each pair of elements and print the larger of the two 
+  if a > b:
+    print a
+  else:
+    print b
+
