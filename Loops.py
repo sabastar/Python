@@ -148,3 +148,12 @@ for key in d:
   # Print the key with space and value associated
   print key + " " + d[key]
   
+# ENUMERATION
+choices = ['pizza', 'pasta', 'salad', 'nachos']
+
+# enumerate supplies an index to each element in list that is passed > can count how many items
+# index incremented, item is next item in sequence
+# modify the print statement to start at index 1 
+print 'Your choices are:'
+for index, item in enumerate(choices):
+  print index+1, item
