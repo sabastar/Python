@@ -173,3 +173,14 @@ for a, b in zip(list_a, list_b):
   else:
     print b
 
+fruits = ['banana', 'apple', 'orange', 'tomato', 'pear', 'grape']
+
+print 'You have...'
+for f in fruits:
+  if f == 'tomato':
+    print 'A tomato is not a fruit!' # (It actually is.)
+    break
+  print 'A', f
+  # executed after for only if for ends normally (no break)
+else:
+  print 'A fine selection of fruits!'
