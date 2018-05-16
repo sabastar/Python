@@ -184,3 +184,15 @@ for f in fruits:
   # executed after for only if for ends normally (no break)
 else:
   print 'A fine selection of fruits!'
+
+# Create your own for/else statement
+# Else branch execution is optional
+# Print a string of your choice
+
+veggies = ["potato", "carrot", "pepper", "pickle"]
+
+for item in veggies:
+  if item == "carrot":
+    print item + " is not a vegetable that starts with p"
+  else:
+    print item + " is a vegetable that starts with p"
