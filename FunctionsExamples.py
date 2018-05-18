@@ -6,5 +6,4 @@ def is_even(x):
   else:
     return False
 
-  is_even(50)
   
