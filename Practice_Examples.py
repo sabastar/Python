@@ -30,3 +30,15 @@ def digit_sum(n):
     sum += int(i)
   return sum
 
+# ***** FACTORIAL *******
+# Factorial of pos int x > multiply all ints from 1 to x
+# Ex: factorial(4) = 4*3*2*1
+def factorial(x):
+  # calculate and return the factorial of number x 
+  if x == 0:
+    return 1
+  else:
+    return x*factorial(x-1)
+  
+print factorial(4)
+
