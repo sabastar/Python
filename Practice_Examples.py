@@ -17,3 +17,16 @@ def is_int(x):
     return True
   else:
     return False
+# ****** DIGIT_SUM *********
+# Summing the digits of a number
+# Takes positive int n and returns sum of all that number's digits
+# Ex: 1234 should return 10 (assume always positive number)
+
+def digit_sum(n):
+  # convert n to string and iterate over and back into int
+  sum = 0
+  #strg = str(n)
+  for i in str(n):
+    sum += int(i)
+  return sum
+
