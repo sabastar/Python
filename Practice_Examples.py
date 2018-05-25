@@ -42,3 +42,16 @@ def factorial(x):
   
 print factorial(4)
 
+# **** ANTI-VOWEL ******
+
+# Define a function that takes a string input and returns it with all the vowels removed
+def anti_vowel(text):
+  new = ''
+  for i in text:
+    if i not in "aeiouAEIOU":
+      new += i 
+  return new
+
+print anti_vowel("Hey You!")
+
+# 
