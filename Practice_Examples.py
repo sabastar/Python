@@ -42,6 +42,22 @@ def factorial(x):
   
 print factorial(4)
 
+# **** REVERSE TEXT ****
+
+# Reverse takes string text and returns it in reverse
+# Ex: abcd should return dcba
+def reverse(text):
+  l=len(text)
+  t=''
+  while (l > 0):
+    # loop through text starting from the last character through the first
+    l-=1
+    t+=text[l]
+  return t
+   
+print reverse("abcd")
+
+
 # **** ANTI-VOWEL ******
 
 # Define a function that takes a string input and returns it with all the vowels removed
