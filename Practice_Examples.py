@@ -121,3 +121,17 @@ def count(sequence, item):
   return sum
 
 print count([1,"hey",1,1],"hey")
+
+# **** PURIFY ****
+# Define a function that takes ina list of numbers, removes all odd numbers in the list and returns the result
+# Return a new list with only the even numbers 
+
+def purify(lst):
+  newlst=[]
+  for i in lst: 
+    if i%2 ==0:
+      newlst.append(i)
+      
+  return newlst
+
+print purify([1,2,3])
