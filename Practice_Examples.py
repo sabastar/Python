@@ -135,3 +135,17 @@ def purify(lst):
   return newlst
 
 print purify([1,2,3])
+
+# **** PRODUCT ****
+
+# Define a function called product that takes a list of integers as inputs and returns the product of all elements in the list
+# Don't worry about list being empty, function should return an integer
+
+def product(int_lst):
+  product = 1
+  for i in int_lst:
+    product *= i
+  
+  return product
+
+print product([4,5,5])
