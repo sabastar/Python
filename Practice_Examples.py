@@ -94,3 +94,18 @@ print scrabble_score("Helix")
 
 # *** CENSOR ****
 
+# Write a function censor that takes 2 strings and returns the string entered replaced with asterisks
+# Assumptions: > input strings don't contain punctuation or upper case letters. 
+# > Number of asterisks should correspond to the number of letters in the censored word
+
+def censor(text, word):
+  text = text.split()
+  for i in range(len(text)):
+    if text[i] == word:
+      text[i]='*'*len(word)
+
+  
+  return " ".join(text)
+
+print censor("this hack is wack hack", "hack")
+
