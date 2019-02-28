@@ -109,3 +109,15 @@ def censor(text, word):
 
 print censor("this hack is wack hack", "hack")
 
+# **** COUNT **** 
+
+# Count has 2 arguments, return the number of times the item occurs in the list (list can be of an integer, string, float or other list)
+
+def count(sequence, item):
+  sum = 0
+  for i in sequence:
+    if i == item:
+      sum+=1
+  return sum
+
+print count([1,"hey",1,1],"hey")
