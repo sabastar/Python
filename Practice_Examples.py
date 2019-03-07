@@ -149,3 +149,21 @@ def product(int_lst):
   return product
 
 print product([4,5,5])
+
+
+# **** REMOVE DUPLICATES ****
+
+# write a function that takes in a list and removes elements of the list that are the same 
+# The order in which you present your output does not matter
+# return a new list, do not modify the list you take as input
+
+def remove_duplicates(lst):
+  # create new empty list
+  mylist = []
+  # loop through lst
+  for i in lst:
+    if i not in mylist: #add to it
+      mylist.append(i)
+  return mylist
+
+print remove_duplicates(['a','b','c','c','d','a','s'])
