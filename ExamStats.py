@@ -21,4 +21,11 @@ def grades_sum(grades):
 
 print grades_sum(grades)
 
-# 
+# Use grades_sum to calculate the AVERAGE test grade
+
+def grades_average(grades_input):
+  gsum=grades_sum(grades_input)
+  
+  return grades_sum(grades_input)/float(len(grades_input))
+
+print grades_average(grades)
