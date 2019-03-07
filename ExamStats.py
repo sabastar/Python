@@ -10,3 +10,15 @@ def print_grades(grades_input):
     print i
     
 print_grades(grades)
+
+# Create another function to compute the sum of all the test grades - without using SUM function
+
+def grades_sum(grades):
+  total = 0
+  for i in grades:
+    total+= i
+  return total
+
+print grades_sum(grades)
+
+# 
