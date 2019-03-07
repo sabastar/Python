@@ -167,3 +167,29 @@ def remove_duplicates(lst):
   return mylist
 
 print remove_duplicates(['a','b','c','c','d','a','s'])
+
+# **** MEDIAN *****
+#
+# Write a function to find th median of a list (middle number in a sorted sequence of numbers)
+# Take a list as input and return the median value of the list
+#
+# Assumption: > list can be of any size and the numbers are not guaranteed to be in any order. Make sure to sort it - use sorted() 
+# > if list contains an even number of elements, return the average of the middle two
+
+def median(lst):
+  lst = sorted(lst)
+  list_len=len(lst)
+  
+  # if EVEN
+  if list_len%2==0:
+    first = list_len/2
+    second= first-1
+    return (lst[first]+lst[second])/2.0
+  
+  # if ODD
+  elif list_len%2 !=0:
+    first = list_len/2
+    return (lst[first])
+
+
+median([0,1,2,3,4,5])
