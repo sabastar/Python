@@ -29,3 +29,15 @@ def grades_average(grades_input):
   return grades_sum(grades_input)/float(len(grades_input))
 
 print grades_average(grades)
+
+# Variance - how grades varied against the average (smaller = closer to average)
+def grades_variance(scores):
+  average= grades_average(scores)
+  variance=0 # rolling sum
+  
+  for score in scores: #compute its squared difference
+    variance+= (average-score)**2
+  return variance/len(scores)
+
+print grades_variance(grades)
+
