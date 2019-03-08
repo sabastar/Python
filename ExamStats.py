@@ -41,3 +41,9 @@ def grades_variance(scores):
 
 print grades_variance(grades)
 
+# Standard Deviation - square root of the variance, can calculate square root by raising the number to the one-half power
+
+def grades_std_deviation(variance):
+  return variance **0.5
+variance = grades_variance(grades)
+print grades_std_deviation(variance)
