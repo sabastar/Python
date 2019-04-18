@@ -63,3 +63,15 @@ print to_five[::2] # stride is 2
 my_list = range(1, 11) # List of numbers 1 - 10
 
 print my_list[::2]
+
+# Positive stride > progresses through list from left to right
+# Negative stride > right to left 
+
+letters = ['A', 'B', 'C', 'D', 'E']
+print letters [::-1]
+
+# Reverse the list 
+my_list = range(1, 11)
+
+backwards = my_list[::-1]
+
