@@ -75,3 +75,15 @@ my_list = range(1, 11)
 
 backwards = my_list[::-1]
 
+# Print the result of going backwards by tens
+to_one_hundred = range(101)
+
+backwards_by_tens = to_one_hundred[::-10]
+print backwards_by_tens
+
+# Create a list to_21 that the numbers 1 to 21 inclusive
+to_21 = [i for i in range(1,22)]
+# Create second list odds that contains only the odd numbers in to_21 using list slicing
+odds = to_21[::2]
+# Create a third list that's equal to the middle third of to_21 from 8 to 14 inclusive
+middle_third = to_21[7:14:1]
