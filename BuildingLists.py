@@ -57,3 +57,9 @@ print to_five[:2] # ends at 2
 
 print to_five[::2] # stride is 2
 # print ['A', 'C', 'E']
+
+# Use slicing to print out every odd element of my_list from start to finish
+
+my_list = range(1, 11) # List of numbers 1 - 10
+
+print my_list[::2]
